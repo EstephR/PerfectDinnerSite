@@ -1,0 +1,175 @@
+@media screen {    
+    .rating-container {
+        display: flex;
+        width: 70%;
+        min-width: 450px;
+        margin: 0 auto;
+        align-items: center;
+        justify-content: center;
+        border: 3px #1F1F1F solid;
+        border-radius: 15px;
+    }
+
+    .rating-widget input[type="radio"] {
+        display: none;
+    }
+
+    .rating-widget label {
+        margin-top: 50px;
+        font-size: 1.5em;
+        color: #444;
+        padding: 10px;
+        transition: all 0.2s ease;
+        float: right;
+    }
+
+    input:not(:checked) ~ label:hover,
+    input:not(:checked) ~ label:hover ~ label {
+        color: #fd4;
+    }
+
+    input:checked ~ label {
+        color: #fd4;
+    }
+
+    form header {
+        margin-top: 10px;
+        width: 100%;
+        font-size: 1.5em;
+        color: #fd4;
+        font-weight: bold;
+        margin: 5px 0 20px 0;
+        transition: all 0.2s ease;
+    }
+
+    form .textarea {
+        height: 150px;
+        width: 70%;
+        margin: 0 auto;
+        margin-top: 50px;
+        overflow: hidden;
+    }
+
+    form .textarea textarea {
+        height: 100%;
+        width: 100%;
+        outline: none;
+        border-style: none;
+        border-top: solid 1px #1F1F1F;
+
+        resize: none;
+
+        font-size: 1.2em;
+        font-weight: bold;
+        font-family: Quicksand, Arial, Helvetica, sans-serif;
+    }
+
+    form .name {
+        height: 40px;
+        width: 70%;
+        margin: 20px auto;
+    }
+
+    form .name input {
+        height: 100%;
+        width: 100%;
+        
+        outline: none;
+        border-style: none;
+        border-bottom: 1px #1F1F1F solid;
+
+
+        font-size: 1.2em;
+        font-weight: bold;
+        font-family: Quicksand, Arial, Helvetica, sans-serif;
+    }
+
+    form .button {
+        height: 45px;
+        width: 100%;
+        margin: 50px 0;
+    }
+
+    form .button button {
+        height: 100%;
+        width: 70%;
+        outline: none;
+        border-style: none;
+
+        background: #1F1F1F;
+        color: white;
+
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 1.2em;
+        font-family: Quicksand, Arial, Helvetica, sans-serif;
+        letter-spacing: 0.2em;
+
+        border-radius: 10px;
+
+        cursor: pointer;
+
+        transition: all 0.3s ease;
+    }
+
+    form .button button:hover {
+        background: white;
+        color: #1F1F1F;
+        border: 3px #1F1F1F solid;
+    }
+
+    /*Rating Texte*/
+    #rate-1:checked ~ form header:before {
+        content: "Schmeckte wie Katzenpisse!"
+    }
+
+    #rate-2:checked ~ form header:before {
+        content: "Kann wer beim Kebab-Standl anrufen?"
+    }
+
+    #rate-3:checked ~ form header:before {
+        content: "Da hab ich schon besser gegessen!"
+    }
+
+    #rate-4:checked ~ form header:before {
+        content: "Ein Bemühen war vorhanden!"
+    }
+
+    #rate-5:checked ~ form header:before {
+        content: "Alles in Allem wars gut!"
+    }
+
+    #rate-6:checked ~ form header:before {
+        content: "Richtig gute Küche und Service!"
+    }
+
+    #rate-7:checked ~ form header:before {
+        content: "Mein Gaumen frohlockt!"
+    }
+
+    #rate-8:checked ~ form header:before {
+        content: "2 Hauben für Gryffindor!"
+    }
+
+    #rate-9:checked ~ form header:before {
+        content: "Welch ein Hochgenuss!"
+    }
+
+    #rate-10:checked ~ form header:before {
+        content: "Ich glaube ich hab Gott gesehen!"
+    }
+
+
+    .rating-message {
+        width: 70%;
+        margin: 0 auto;
+        margin-bottom: 20px;
+        text-align: center;
+
+        font-size: 1.2em;
+        font-weight: bold;
+        color: #fd4;
+        background-color: rgba(128, 128, 128, 0.432);
+
+    }
+} /*End Media*/

@@ -1,0 +1,98 @@
+@media screen {
+    .section1 {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+
+    }
+    
+    .host-wrapper {
+        display: inline-flex;
+    }
+ 
+    .img-host1, .img-host2 {
+        display: flex;
+        text-align: center;
+        margin: 0 auto;
+
+        height: 200px;
+        width: 200px;
+        
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+
+        border-radius: 50%;
+        margin: 0 20px;
+
+        box-shadow: 2px 3px 10px 0.15px rgb(136, 135, 135);
+
+        cursor: pointer;
+    }
+    
+    .img-host1, .img-host2 {
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .img-host1{
+        background-image: url("../img/Sonja.jpg");
+    }
+    
+    .img-host2{
+        background-image: url("../img/Tobi.jpg");
+    }
+
+    .host-name1, .host-name2 {
+        width: 80%;
+        margin: 0 auto;
+        margin-top: 10px;
+        padding: 10px 0;
+        
+        background-color: #1F1F1F;
+        color: white;
+        
+        border-radius: 25px;
+        box-shadow: 2px 3px 10px 0.15px rgb(136, 135, 135);
+
+        opacity: 0;
+        transition: all 0.4s ease;
+    }
+
+    .host-wrapper .host1:hover .host-name1 {
+        opacity: 1;
+    }
+
+    .host-wrapper .host2:hover .host-name2 {
+        opacity: 1;
+    }
+
+    .host-description {
+        display: flex;
+        text-align: center;
+    }
+
+    .host-text1, .host-text2 {
+        text-align:center;
+        
+        width: 80%;
+        margin: 0 auto;
+        margin-top: 10px;
+
+        padding: 10px;
+        border: 3px solid #1F1F1F;
+        border-radius: 15px;
+        opacity: 0;
+        transition: all 0.4s ease;
+    }
+
+    .host-wrapper .host1:hover .host-text1 {
+        opacity: 1;
+    }
+
+    .host-wrapper .host2:hover .host-text2 {
+        opacity: 1;
+    }
+
+} /*End Media*/
+

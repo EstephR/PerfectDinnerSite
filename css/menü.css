@@ -1,0 +1,10 @@
+@media screen {
+    .menü-wrapper {
+        margin-bottom: 3em;
+    } 
+
+    .menü-wrapper p {
+        margin-top: 1em;
+    }
+
+} /*End Media*/

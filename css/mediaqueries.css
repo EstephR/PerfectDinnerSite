@@ -1,0 +1,21 @@
+@media (max-width: 700px) {
+        .section1 {
+            min-height: 930px;
+        }   
+}
+
+@media (max-width: 950px) {
+    .nav-bar ul {
+        flex-direction: column;
+    }
+}
+
+
+@media (max-width: 800px) {
+    .host-name1, .host-name2, .host-text1, .host-text2 {
+        opacity: 1;
+    }
+}
+
+
+/*End Media*/
